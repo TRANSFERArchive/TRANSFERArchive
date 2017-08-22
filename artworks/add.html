@@ -85,7 +85,17 @@
         margin-top: 20px;
       }
  	
-     	
+     	#form-action-row {
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        height: 55px;
+        padding: 10px;
+      }
+
+      .action-button-right{
+        text-align: right;
+      }
  	</style>
  	
 </head>
@@ -152,7 +162,7 @@
         </div-->
 
       <!-- Container for selector -->
-      <div class="col s12">
+      <!--div class="col s12">
         <div class="wizard card-tabs">
             <ul class="tabs tabs-fixed-width">
                 <li class="tab"><a class="active" href="#test4">Tombstone</a></li>
@@ -163,82 +173,167 @@
               </ul>
         </div>
 
-      <!--div class="input-field col 12">
+      <div class="input-field col 12">
          			 <select>
            			 <option value="" disabled selected>View By:</option>
            			 <option value="1">Option 1</option>
            			 <option value="2">Option 2</option>
            			 <option value="3">Option 3</option>
           			</select>
-       		 </div-->
-       </div>	
+       		 </div>
+       </div-->	
  	 
- 	<!-- CARDs START HERE-->	 
- 	<div class="row">
- 	 		  
- 		 <div class="input-screen col s6">
-        
-        <div class="input-field col s12">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Title</label>
-        </div>
-        <div class="col s6">
-          <label>Start Date</label>
-            <select class="browser-default">
-              <option value="1">Select Year</option>
-              <option value="2">2017</option>
-              <option value="3">2016</option>
-              <option value="4">2015</option>
-            </select>
-        </div>
-        <div class="col s6">
-          <label>End Date</label>
-            <select class="browser-default">
-              <option value="1">Select Year</option>
-              <option value="2">Ongoing</option>
-              <option value="3">2017</option>
-              <option value="4">2016</option>
-              <option value="5">2015</option>
-            </select>
-        </div>
-        <div class="air col s12">
-          <label>Materialize Multiple Select</label>
-          <select multiple>
-            <option value="" disabled selected>Medium – Select all that apply</option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-            <option value="3">Option 3</option>
-          </select>
-        </div>
-     </div>
+  <!-- WIZARD TABBED HTML-->  
 
+  <div class="row">
 
-      <div class="col s6">
-                <div class="divider"></div>
-                  <div class="section">
-                    <h5>Section 1</h5>
-                    <p>Stuff</p>
-                  </div>
-                <div class="divider"></div>
-                  <div class="section">
-                    <h5>Section 2</h5>
-                    <p>Stuff</p>
-                  </div>
-                <div class="divider"></div>
-                  <div class="section">
-                    <h5>Section 3</h5>
-                    <p>Stuff</p>
-                  </div>
-           </div>        
-        
-        <!-- END CARDs -->
+    <div class="wizard col s12">
+      <ul class="tabs">
+        <li class="tab col s3"><a class="active" href="#test1">Tombstone</a></li>
+        <li class="tab col s3"><a href="#test2">Conservation</a></li>
+        <li class="tab col s3"><a href="#test3">Inventory</a></li>
+        <li class="tab col s3"><a href="#test4">Activity</a></li>
+      </ul>
     </div>
-  </div>
+  <!-- /////// Tombstone Content -->  
+    <div id="test1" class="col s12">
+      
+            <div class="row">
+                  
+               <div class="input-screen col s6">
+                  
+                  <div class="input-field col s12">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Title</label>
+                  </div>
+                  <div class="col s6">
+                    <label>Start Date</label>
+                      <select class="browser-default">
+                        <option value="1">Select Year</option>
+                        <option value="2">2017</option>
+                        <option value="3">2016</option>
+                        <option value="4">2015</option>
+                      </select>
+                  </div>
+                  <div class="col s6">
+                    <label>End Date</label>
+                      <select class="browser-default">
+                        <option value="1">Select Year</option>
+                        <option value="2">Ongoing</option>
+                        <option value="3">2017</option>
+                        <option value="4">2016</option>
+                        <option value="5">2015</option>
+                      </select>
+                  </div>
+                  <div class="air col s12">
+                    <label>Medium</label>
+                    <select multiple>
+                      <option value="" disabled selected>Select all that apply</option>
+                      <option value="1">Moving Image</option>
+                      <option value="2">Interactive</option>
+                      <option value="3">Sculpture</option>
+                      <option value="4">Print</option>
+                      <option value="5">Algorithmic</option>
+
+
+                    </select>
+                  </div>
+                  <div class="air col s12">
+                    <label>Medium</label>
+                    <select multiple>
+                      <option value="" disabled selected>Select all that apply</option>
+                      <option value="1">Moving Image</option>
+                      <option value="2">Interactive</option>
+                      <option value="3">Sculpture</option>
+                      <option value="4">Print</option>
+                      <option value="5">Algorithmic</option>
+
+
+                    </select>
+                  </div>
+                  <div class="air col s12">
+                    <label>Medium</label>
+                    <select multiple>
+                      <option value="" disabled selected>Select all that apply</option>
+                      <option value="1">Moving Image</option>
+                      <option value="2">Interactive</option>
+                      <option value="3">Sculpture</option>
+                      <option value="4">Print</option>
+                      <option value="5">Algorithmic</option>
+
+
+                    </select>
+                  </div>
+                  <div class="air col s12">
+                    <label>Medium</label>
+                    <select multiple>
+                      <option value="" disabled selected>Select all that apply</option>
+                      <option value="1">Moving Image</option>
+                      <option value="2">Interactive</option>
+                      <option value="3">Sculpture</option>
+                      <option value="4">Print</option>
+                      <option value="5">Algorithmic</option>
+
+
+                    </select>
+                  </div>
+               </div>
+
+
+                <div class="col s6">
+                          <div class="divider"></div>
+                            <div class="section">
+                              <h5>Section 1</h5>
+                              <p>Stuff</p>
+                            </div>
+                          <div class="divider"></div>
+                            <div class="section">
+                              <h5>Section 2</h5>
+                              <p>Stuff</p>
+                            </div>
+                          <div class="divider"></div>
+                            <div class="section">
+                              <h5>Section 3</h5>
+                              <p>Stuff</p>
+                            </div>
+                          </div>    
+                </div>
+
+              </div> <!-- END ROW -->
+
+  <!-- /////// Conservation Content -->  
+    <div id="test2" class="col s12">Test 2</div>
+
+  <!-- /////// Inventory Content -->  
+    <div id="test3" class="col s12">Test 3</div>
+
+  <!-- /////// Activity Content -->  
+    <div id="test4" class="col s12">Test 4</div>
+
+  </div> <!-- END WIZARD TABS ROW -->
+
+    </div> <!-- END BODY s9 ROW -->
+
+
+        <div id="form-action-row" class="col s12 offset-s2 grey white-text">
+           <div class="col s10 action-button-right">
+            <a class="btn-flat"><i class="material-icons right">close</i>CANCEL</a>
+             <button class="btn waves-effect waves-light" type="submit" name="action">SAVE
+                <i class="material-icons right">check</i>
+             </button>
+           </div>
+        </div>
+
+  </div> <!-- END MAIN CONTAINTER-->
 </div>
       
       <script type="text/javascript">
         $(document).ready(function() {
           $('select').material_select();
+        });
+
+        $(document).ready(function(){
+          $('ul.tabs').tabs('select_tab', 'test1');
         });
       </script>
       
