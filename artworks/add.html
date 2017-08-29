@@ -70,13 +70,27 @@
       box-shadow: none;
       }
 
-     	.add_blank {
+     .add_blank {
      	margin-top: 5em;
      	}
 
-      .wizard {
+     .wizard {
         margin-top: 15px;
       }
+
+    .tabs .tab a{
+    color:#666666;
+	}
+	.tabs .tab a:hover,.tabs .tab a.active {
+	background-color:transparent;
+	color:#000000;
+	}
+	.tabs .tab.disabled a,.tabs .tab.disabled a:hover {
+	color: #ffffff;	
+	}
+	.tabs .indicator {
+	background-color:#000000;
+	}
 
       .input-screen{
         margin-top: 10px;
@@ -98,6 +112,9 @@
       .action-button-right{
         text-align: right;
       }
+      #grid_dark a {
+      	color: #000000;
+      }
  	</style>
  	
 </head>
@@ -106,7 +123,7 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="../js/materialize.min.js"></script>
       
-    <div class="logout grey lighten-2"><div>Logout</div></div>
+    <div class="logout grey lighten-2 white-text"><div>LOGOUT</div></div>
   
     <!-- Page Layout here -->
     
@@ -123,7 +140,7 @@
 
        <li> 
            			<ul class="collection user_box ">
-                  <li class="collection-item avatar grey white-text">
+                  <li class="collection-item avatar black white-text">
                       <div class="user_name">
                         <img src="../images/yuna.jpg" alt="" class="circle">
                         <span class="title">Artist Name</span>
@@ -135,11 +152,11 @@
        
     <!-- Navigation -->
 
-        <li class="active"><a href="../artworks/index.html"><i class="material-icons">photo_library</i>Artworks</a></li>
-        <li><a href="../exhibitions/index.html"><i class="material-icons">select_all</i>Exhibitions</a></li>
-        <li><a href="../loans/index.html"><i class="material-icons">send</i>Loans</a></li>
-        <li><a href="../media/index.html"><i class="material-icons">flag</i>Media</a></li>
-        <li><a href="../interest/index.html"><i class="material-icons">question_answer</i>Interest</a></li>
+        <li class="active"><a href="../artworks/index.html"><i class="material-icons" style="color: #000000;">photo_library</i>Artworks</a></li>
+        <li><a href="../exhibitions/index.html"><i class="material-icons" style="color: #000000;">select_all</i>Exhibitions</a></li>
+        <li><a href="../loans/index.html"><i class="material-icons" style="color: #000000;">send</i>Loans</a></li>
+        <li><a href="../media/index.html"><i class="material-icons" style="color: #000000;">flag</i>Media</a></li>
+        <li><a href="../interest/index.html"><i class="material-icons" style="color: #000000;">question_answer</i>Interest</a></li>
     <!-- Logo -->
         <li class="transfer-logo"><img src="../images/archive-logo.png" width="200"></li>
       
@@ -256,7 +273,7 @@
 	                <div class="air col s12">
 								<form action="#">
 								    <div class="file-field input-field">
-								      <div class="btn">
+								      <div class="btn black">
 								        <span>IMAGES</span>
 								        <input type="file" multiple>
 								      </div>
@@ -348,7 +365,7 @@
 								<form action="#">
 								<span>Source Files</span>
 								    <div class="file-field input-field">
-								      <div class="btn">
+								      <div class="btn black">
 								        <span>SELECT</span>
 								        <input type="file" id="source_files" multiple>
 								      </div>
@@ -363,7 +380,7 @@
 								<form action="#">
 								<span>Artist Interview</span>
 								    <div class="file-field input-field">
-								      <div class="btn">
+								      <div class="btn black">
 								        <span>SELECT</span>
 								        <input type="file" id="source_files" multiple>
 								      </div>
@@ -378,7 +395,7 @@
 								<form action="#">
 								<span>Correspondence</span>
 								    <div class="file-field input-field">
-								      <div class="btn">
+								      <div class="btn black">
 								        <span>SELECT</span>
 								        <input type="file" id="source_files" multiple>
 								      </div>
@@ -402,7 +419,7 @@
 		    <li>
 		      <div class="collapsible-header">Edition 1
 						<div class="col s4">
-							<a class="waves-effect waves-light btn"><i class="material-icons right">check</i>Available</a>
+							<a class="waves-effect waves-light btn green"><i class="material-icons right">check</i>Available</a>
 		                 </div>
 		      </div>
 		      <div class="collapsible-body col s12">
@@ -473,7 +490,7 @@
 								<form action="#">
 								<span>Attachments</span>
 								    <div class="file-field input-field">
-								      <div class="btn">
+								      <div class="btn black">
 								        <span>SELECT</span>
 								        <input type="file" id="source_files" multiple>
 								      </div>
@@ -488,7 +505,7 @@
 		    <li>
 		      <div class="collapsible-header">Edition 2
 						<div class="col s4">
-							<a class="waves-effect waves-light btn"><i class="material-icons right">check</i>Available</a>
+							<a class="waves-effect waves-light btn green"><i class="material-icons right">check</i>Available</a>
 		                 </div>
 		      </div>
 		      <div class="collapsible-body col s12">
@@ -559,7 +576,7 @@
 								<form action="#">
 								<span>Attachments</span>
 								    <div class="file-field input-field">
-								      <div class="btn">
+								      <div class="btn black">
 								        <span>SELECT</span>
 								        <input type="file" id="source_files" multiple>
 								      </div>
@@ -661,7 +678,7 @@
   		</ul>
   		</div>
   		<div class="right">
-  		  <a class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">add</i></a>
+  		  <a class="btn-floating btn-large waves-effect waves-light black"><i class="material-icons">add</i></a>
   		</div>
     </div>
 
@@ -671,7 +688,7 @@
 						 		  <div class="col s4">
 						   		  <div class="add card white small">
 						          <div class="card-content black-text">
-						                <p><a class="add_blank btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+						                <p><a class="add_blank btn-floating btn-large waves-effect waves-light black"><i class="material-icons">add</i></a>
 						  				<span class="card-title">Add New Activity</span></p>
 
 						          </div>
@@ -680,7 +697,7 @@
 						 		  <!-- END ADD CARD-->	
 
 						    	<!-- START First CARD -->	 
-						      <div class="col s4">
+						      <div id="grid_dark" class="col s4">
 						          <div class="card small sticky-action">
 
 						            <div class="card-image waves-effect waves-block waves-light">
@@ -707,7 +724,7 @@
 						      <!-- END CARD -->
 
 						      <!-- START Second CARD -->  
-						      <div class="col s4">
+						      <div id="grid_dark" class="col s4">
 						          <div class="card small sticky-action">
 
 						            <div class="card-image waves-effect waves-block waves-light">
@@ -734,7 +751,7 @@
 						      <!-- END CARD -->
 						      
 						      <!-- START Third CARD -->  
-						      <div class="col s4">
+						      <div id="grid_dark" class="col s4">
 						          <div class="card small sticky-action">
 
 						            <div class="card-image waves-effect waves-block waves-light">
@@ -763,7 +780,7 @@
 
 
 						      <!-- START Fourth CARD -->  
-						      <div class="col s4">
+						      <div id="grid_dark" class="col s4">
 						          <div class="card small sticky-action">
 
 						            <div class="card-image waves-effect waves-block waves-light">
@@ -797,10 +814,10 @@
     </div> <!-- END BODY s9 ROW -->
 
 
-        <div id="form-action-row" class="col s12 offset-s2 grey">
+        <div id="form-action-row" class="col s12 offset-s2 black">
            <div class="col s10 action-button-right ">
             <a class="btn-flat white-text"><i class="material-icons right">close</i>CANCEL</a>
-             <button class="btn waves-effect waves-light" type="submit" name="action">SAVE
+             <button class="btn waves-effect waves-light green" type="submit" name="action">SAVE
                 <i class="material-icons right">check</i>
              </button>
            </div>
