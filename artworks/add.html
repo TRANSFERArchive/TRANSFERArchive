@@ -30,92 +30,11 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../css/custom.css"  media="screen,projection"/>
+
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
- 
- 	<style>
- 	
-     	.logout{
-     	font-size:.8em;
-     	text-align: right;
-     	padding-right: 15px;
-     	position: fixed;
-     	width: 100%;
-     	margin-bottom: 0px;
-     	z-index: 1000;
-     	}
- 	
-     	.side-nav{
-     	margin-top: 15px;
-     	z-index: 1001;
-     	}
-
-      .user_box {
-      margin-top: 0px;
-      }
-  
-      .user_name {
-      margin-top: 10px;
-      }
-  
-      .transfer-logo {
-      margin-top: 100px;
-      margin-left: 20px;
-      }
-
-      .add {
-      text-align: center;
-      border: none;
-      box-shadow: none;
-      }
-
-     .add_blank {
-     	margin-top: 5em;
-     	}
-
-     .wizard {
-        margin-top: 15px;
-      }
-
-    .tabs .tab a{
-    color:#666666;
-	}
-	.tabs .tab a:hover,.tabs .tab a.active {
-	background-color:transparent;
-	color:#000000;
-	}
-	.tabs .tab.disabled a,.tabs .tab.disabled a:hover {
-	color: #ffffff;	
-	}
-	.tabs .indicator {
-	background-color:#000000;
-	}
-
-      .input-screen{
-        margin-top: 10px;
-      }
-
-      .air {
-        margin-top: 20px;
-      }
- 	
-     	#form-action-row {
-        bottom: 0;
-        position: fixed;
-        width: 100%;
-        height: 55px;
-        padding: 10px;
-        z-index: 1000;
-      }
-
-      .action-button-right{
-        text-align: right;
-      }
-      #grid_dark a {
-      	color: #000000;
-      }
- 	</style>
  	
 </head>
   <body>
@@ -123,7 +42,7 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="../js/materialize.min.js"></script>
       
-    <div class="logout grey lighten-2 white-text"><div>LOGOUT</div></div>
+    <div class="logout grey lighten-2 white-text"><div><a href="../index.html">LOGOUT</a></div></div>
   
     <!-- Page Layout here -->
     
@@ -419,7 +338,7 @@
 		    <li>
 		      <div class="collapsible-header">Edition 1
 						<div class="col s4">
-							<a class="waves-effect waves-light btn green"><i class="material-icons right">check</i>Available</a>
+							<a class="waves-effect waves-light btn teal"><i class="material-icons right">check</i>Available</a>
 		                 </div>
 		      </div>
 		      <div class="collapsible-body col s12">
@@ -505,7 +424,7 @@
 		    <li>
 		      <div class="collapsible-header">Edition 2
 						<div class="col s4">
-							<a class="waves-effect waves-light btn green"><i class="material-icons right">check</i>Available</a>
+							<a class="waves-effect waves-light btn teal"><i class="material-icons right">check</i>Available</a>
 		                 </div>
 		      </div>
 		      <div class="collapsible-body col s12">
@@ -678,7 +597,7 @@
   		</ul>
   		</div>
   		<div class="right">
-  		  <a class="btn-floating btn-large waves-effect waves-light black"><i class="material-icons">add</i></a>
+  		  <a class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">add</i></a>
   		</div>
     </div>
 
@@ -688,7 +607,7 @@
 						 		  <div class="col s4">
 						   		  <div class="add card white small">
 						          <div class="card-content black-text">
-						                <p><a class="add_blank btn-floating btn-large waves-effect waves-light black"><i class="material-icons">add</i></a>
+						                <p><a class="add_blank btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">add</i></a>
 						  				<span class="card-title">Add New Activity</span></p>
 
 						          </div>
@@ -817,7 +736,7 @@
         <div id="form-action-row" class="col s12 offset-s2 black">
            <div class="col s10 action-button-right ">
             <a class="btn-flat white-text"><i class="material-icons right">close</i>CANCEL</a>
-             <button class="btn waves-effect waves-light green" type="submit" name="action">SAVE
+             <button class="btn waves-effect waves-light teal" type="submit" name="action">SAVE
                 <i class="material-icons right">check</i>
              </button>
            </div>
